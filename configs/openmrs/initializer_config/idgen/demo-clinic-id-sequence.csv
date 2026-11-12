@@ -1,0 +1,2 @@
+Uuid,Void/Retire,Name,Description,Identifier type,Prefix,Suffix,First identifier base,Min length,Max length,Base character set
+de19c236-c1e5-4f13-8582-83009f3e7f90,,Demo Clinic ID sequence,Generates DC000001 and up,Demo Clinic ID,DC,,000001,8,8,0123456789

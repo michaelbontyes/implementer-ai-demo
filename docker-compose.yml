@@ -52,6 +52,7 @@ services:
       - ./configs/openmrs/initializer_config/globalproperties:/openmrs/distribution/openmrs_config/globalproperties/site:ro
       - ./configs/openmrs/initializer_config/patientidentifiertypes:/openmrs/distribution/openmrs_config/patientidentifiertypes/site:ro
       - ./configs/openmrs/initializer_config/idgen:/openmrs/distribution/openmrs_config/idgen/site:ro
+      - ./configs/openmrs/initializer_config/autogenerationoptions:/openmrs/distribution/openmrs_config/autogenerationoptions/site:ro
       - ./configs/openmrs/initializer_config/ampathforms:/openmrs/distribution/openmrs_config/ampathforms/site:ro
       - ./configs/openmrs/initializer_config/ampathformstranslations:/openmrs/distribution/openmrs_config/ampathformstranslations/site:ro
 
