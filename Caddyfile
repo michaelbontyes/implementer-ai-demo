@@ -1,0 +1,6 @@
+# HTTPS for UAT: Caddy gets and renews a Let's Encrypt certificate for this name
+# and redirects plain HTTP to HTTPS. The name must resolve to this server and
+# ports 80 and 443 must be open before the certificate can be issued.
+openmrs-demo.madiro.org {
+	reverse_proxy gateway:80
+}
