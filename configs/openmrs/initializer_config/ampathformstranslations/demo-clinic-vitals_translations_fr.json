@@ -1,0 +1,17 @@
+{
+  "uuid": "c6a1f3a2-8f5e-4c1e-9d2a-6f0b8e1d4a71",
+  "form": "Demo Clinic Vitals",
+  "form_name": "Demo Clinic Vitals",
+  "description": "French translations of the Demo Clinic vitals form",
+  "language": "fr",
+  "translations": {
+    "Vitals": "Signes vitaux",
+    "Vital signs": "Signes vitaux",
+    "Weight (kg)": "Poids (kg)",
+    "Height (cm)": "Taille (cm)",
+    "Temperature (°C)": "Température (°C)",
+    "Pulse (beats per minute)": "Pouls (battements par minute)",
+    "Systolic blood pressure (mmHg)": "Tension artérielle systolique (mmHg)",
+    "Diastolic blood pressure (mmHg)": "Tension artérielle diastolique (mmHg)"
+  }
+}

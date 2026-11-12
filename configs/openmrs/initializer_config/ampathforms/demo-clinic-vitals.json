@@ -1,0 +1,101 @@
+{
+  "name": "Demo Clinic Vitals",
+  "description": "Vital signs recorded by clinicians at Demo Clinic",
+  "version": "1.0",
+  "published": true,
+  "retired": false,
+  "encounterType": "67a71486-1a54-468f-ac3e-7091a9a79584",
+  "processor": "EncounterFormProcessor",
+  "referencedForms": [],
+  "pages": [
+    {
+      "label": "Vitals",
+      "sections": [
+        {
+          "label": "Vital signs",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Weight (kg)",
+              "type": "obs",
+              "required": true,
+              "id": "weight",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "5089AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "min": "0.5",
+                "max": "250"
+              },
+              "validators": []
+            },
+            {
+              "label": "Height (cm)",
+              "type": "obs",
+              "required": false,
+              "id": "height",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "5090AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "min": "10",
+                "max": "250"
+              },
+              "validators": []
+            },
+            {
+              "label": "Temperature (°C)",
+              "type": "obs",
+              "required": true,
+              "id": "temperature",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "5088AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "min": "25",
+                "max": "45"
+              },
+              "validators": []
+            },
+            {
+              "label": "Pulse (beats per minute)",
+              "type": "obs",
+              "required": false,
+              "id": "pulse",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "5087AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "min": "20",
+                "max": "250"
+              },
+              "validators": []
+            },
+            {
+              "label": "Systolic blood pressure (mmHg)",
+              "type": "obs",
+              "required": false,
+              "id": "systolic",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "5085AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "min": "50",
+                "max": "250"
+              },
+              "validators": []
+            },
+            {
+              "label": "Diastolic blood pressure (mmHg)",
+              "type": "obs",
+              "required": false,
+              "id": "diastolic",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "5086AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "min": "30",
+                "max": "150"
+              },
+              "validators": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
