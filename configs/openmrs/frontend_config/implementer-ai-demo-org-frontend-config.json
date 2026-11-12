@@ -1,1 +1,8 @@
-{}
+{
+  "@openmrs/esm-primary-navigation-app": {
+    "logo": { "src": null, "alt": "Demo Clinic", "name": "Demo Clinic" }
+  },
+  "@openmrs/esm-login-app": {
+    "logo": { "src": null, "alt": "Demo Clinic" }
+  }
+}
