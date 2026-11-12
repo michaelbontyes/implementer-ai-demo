@@ -1,0 +1,2 @@
+Uuid,Void/Retire,Name,Description,Required,Format,Format description,Validator,Location behavior,Uniqueness behavior
+7ddeb740-12c2-49f6-9d9a-6260d394aa5f,,Demo Clinic ID,Clinic identifier of Demo Clinic patients,true,DC\d{6},DC followed by 6 digits,,NOT_USED,UNIQUE
