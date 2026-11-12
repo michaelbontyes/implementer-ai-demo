@@ -5,7 +5,9 @@
 # The first start takes 15 to 20 minutes while the database is created.
 # Configuration folders are mounted as folders: the backend reads them when it
 # starts, so a deploy recreates the containers after a change.
-# Caddy terminates HTTPS in front of the gateway (see Caddyfile).
+# HTTPS: Caddy terminates TLS with a Let's Encrypt certificate (see Caddyfile)
+# and proxies to the gateway. Ports 80 and 443 must be open on the server and
+# openmrs-demo.madiro.org must resolve to it before the first start.
 services:
   caddy:
     image: caddy:2.8
@@ -18,7 +20,6 @@ services:
     volumes:
       - ./Caddyfile:/etc/caddy/Caddyfile:ro
       - caddy-data:/data
-      - caddy-config:/config
 
   gateway:
     image: openmrs/openmrs-reference-application-3-gateway:${TAG:-3.8.0}
@@ -26,7 +27,6 @@ services:
     depends_on:
       - frontend
       - backend
-    # No published port: only Caddy reaches it, on the compose network.
 
   frontend:
     image: openmrs/openmrs-reference-application-3-frontend:${TAG:-3.8.0}
@@ -90,4 +90,3 @@ volumes:
   openmrs-data: ~
   db-data: ~
   caddy-data: ~
-  caddy-config: ~
