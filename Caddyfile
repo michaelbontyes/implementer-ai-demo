@@ -1,0 +1,5 @@
+# UAT entry point. Caddy obtains and renews the Let's Encrypt certificate
+# automatically and redirects HTTP to HTTPS.
+openmrs-demo.madiro.org {
+	reverse_proxy gateway:80
+}
